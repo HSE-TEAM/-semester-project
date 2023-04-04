@@ -28,27 +28,18 @@ void ReplaceTextOnAllPages(System::String phrase_to_change, System::String chang
 
     String _dataDir(u"E:\\g-soh\\Project1\\Project1\\");
 
-    auto document = MakeObject<Document>(_dataDir + u"workpls.pdf");
-
-    // Create TextAbsorber object to find all instances of the input search phrase
+    auto document = MakeObject<Document>(_dataDir + u"СЊС„РµС„С‚.pdf");
     auto textFragmentAbsorber = MakeObject<TextFragmentAbsorber>(phrase_to_change);
-
-    // Accept the absorber for first page of document
     document->get_Pages()->Accept(textFragmentAbsorber);
-
-    // Get the extracted text fragments into collection
     auto textFragmentCollection = textFragmentAbsorber->get_TextFragments();
 
-    // Loop through the fragments
     for (auto textFragment : textFragmentCollection) {
-        // Update text and other properties
         textFragment->set_Text(changed_phrase);
         textFragment->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
         textFragment->get_TextState()->set_FontSize(12);
         //textFragment->get_TextState()->set_ForegroundColor(Color::get_Blue());
         //textFragment->get_TextState()->set_BackgroundColor(Color::get_Gray());
     }
-    // Save the updated PDF file
     document->Save(_dataDir + u"workpls.pdf");
 }
 
@@ -60,31 +51,31 @@ int main(int argc, char** argv)
         auto doc = MakeObject<Document>();
         auto pages = doc->get_Pages();
         pages->Add();
-        //Numeration of Pages starts from 1
+      
         auto page = pages->idx_get(1);
         auto paragraps = page->get_Paragraphs();
 
-        paragraps->Add(MakeObject<TextFragment>(u"Кп"));
+        paragraps->Add(MakeObject<TextFragment>(u"РљРї"));
 
-        auto text1 = MakeObject<TextFragment>(u"Фамилия: <surname>");
+        auto text1 = MakeObject<TextFragment>(u"Р¤Р°РјРёР»РёСЏ: <surname>");
         auto ts1 = text1->get_TextState();
         ts1->set_FontSize(16);
         ts1->set_FontStyle(FontStyles::Italic);
         paragraps->Add(text1);
 
-        auto text2 = MakeObject<TextFragment>(u"Имя: <name>");
+        auto text2 = MakeObject<TextFragment>(u"РРјСЏ: <name>");
         auto ts2 = text2->get_TextState();
         ts2->set_FontSize(16);
         ts2->set_FontStyle(FontStyles::Italic);
         paragraps->Add(text2);
 
-        auto text3 = MakeObject<TextFragment>(u"Отчество: <second_name>");
+        auto text3 = MakeObject<TextFragment>(u"РћС‚С‡РµСЃС‚РІРѕ: <second_name>");
         auto ts3 = text3->get_TextState();
         ts3->set_FontSize(16);
         ts3->set_FontStyle(FontStyles::Italic);
         paragraps->Add(text3);
 
-        auto text4 = MakeObject<TextFragment>(u"Сумма: <summ>");
+        auto text4 = MakeObject<TextFragment>(u"РЎСѓРјРјР°: <summ>");
         auto ts4 = text4->get_TextState();
         ts4->set_FontSize(16);
         ts4->set_FontStyle(FontStyles::Italic);
@@ -93,9 +84,9 @@ int main(int argc, char** argv)
         doc->Save(u"workpls.pdf");
         Console::WriteLine(u"Example finished.");
 
-        ReplaceTextOnAllPages(u"<surname>", u"Суворов");
-        ReplaceTextOnAllPages(u"<name>", u"Егор");
-        ReplaceTextOnAllPages(u"<second_name>", u"плюсы");
+        ReplaceTextOnAllPages(u"<surname>", u"РЎСѓРІРѕСЂРѕРІ");
+        ReplaceTextOnAllPages(u"<name>", u"Р•РіРѕСЂ");
+        ReplaceTextOnAllPages(u"<second_name>", u"РїР»СЋСЃС‹");
         ReplaceTextOnAllPages(u"<summ>", u"1337");
 
     }
@@ -106,7 +97,7 @@ int main(int argc, char** argv)
     }
     catch (const std::exception& error)
     {
-        std::cerr << "Error: " << error.what() << std::endl;
+        std::cerr << "Error: " << error.what() << '/n';
         return 1;
     }
 
