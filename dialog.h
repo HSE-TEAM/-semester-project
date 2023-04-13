@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <unordered_map>
-//#include "mainwidget.h"
+#include "mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
@@ -25,6 +25,6 @@ private slots:
 private:
     std::unordered_map<std::string, std::string> users;
     Ui::Dialog *ui;
-    //MainWidget *window;
+    MainWindow *window;
 };
 #endif // DIALOG_H

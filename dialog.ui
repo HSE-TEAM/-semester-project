@@ -18,8 +18,8 @@
     <rect>
      <x>40</x>
      <y>80</y>
-     <width>351</width>
-     <height>231</height>
+     <width>381</width>
+     <height>251</height>
     </rect>
    </property>
    <property name="font">
@@ -28,13 +28,13 @@
     </font>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="widget">
     <attribute name="title">
      <string>Log In</string>
     </attribute>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
       <widget class="QGroupBox" name="groupBox">
        <property name="font">
@@ -122,8 +122,8 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>329</width>
-       <height>173</height>
+       <width>361</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="font">
