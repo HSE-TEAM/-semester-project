@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 9.0.2, 2023-04-11T21:09:27. -->
+<!-- Written by QtCreator 9.0.2, 2023-04-16T04:11:51. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -168,6 +168,7 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Собрать</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -184,6 +185,7 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Собрать</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -385,6 +387,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/ivpus/Desktop/Hse/qt exemple/build-project-Desktop_Qt_6_4_3_MinGW_64_bit-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

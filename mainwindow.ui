@@ -17,14 +17,95 @@
    <widget class="QPushButton" name="open_new_people">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>60</y>
+      <x>450</x>
+      <y>10</y>
       <width>171</width>
-      <height>24</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string>создать новый заказ</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="order_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>571</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Заказ №1:</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="name_1">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Имя</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="surname_1">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Фамилия</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="adress_1">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Адрес</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="changes_1">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Последнее изменение</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>120</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>открыть калькулятор</string>
     </property>
    </widget>
   </widget>
