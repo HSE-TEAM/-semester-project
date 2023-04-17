@@ -1,5 +1,6 @@
 #ifndef CALCULATORWINDOW_H
 #define CALCULATORWINDOW_H
+
 #include "window_system.h"
 #include <QDialog>
 #include <QString>
@@ -29,4 +30,5 @@ private:
     Calculator::WindowSystem windowSystem = Calculator::WindowSystem(grandTotal);
     Ui::CalculatorWindow *ui;
 };
+
 #endif // CALCULATORWINDOW_H

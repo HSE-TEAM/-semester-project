@@ -39,7 +39,7 @@ void MainWindow::on_create_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    CalculatorWindow w(this);
+    CalculatorWindow w;
     w.setModal(true);
     w.exec();
 }

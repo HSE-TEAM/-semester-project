@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QDialog" name="MainWindow">
+ <class>CalculatorWindow</class>
+ <widget class="QDialog" name="CalculatorWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,37 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="frontWindowSizesCostValueLabel">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>290</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>0</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="frontWindowSizesCostLabel">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>290</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Монтаж изделий</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>50</y>
+     <x>110</x>
+     <y>90</y>
      <width>271</width>
      <height>101</height>
     </rect>
@@ -103,14 +77,40 @@
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="frontWindowSizesCostLabel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>330</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Монтаж изделий</string>
+   </property>
+  </widget>
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>150</y>
+     <x>110</x>
+     <y>190</y>
      <width>75</width>
      <height>25</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="frontWindowSizesCostValueLabel">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>330</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
    </property>
   </widget>
  </widget>

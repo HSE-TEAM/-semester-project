@@ -35,4 +35,3 @@ void CalculatorWindow::on_frontWidthEdit_textEdited(const QString &arg1)
     ui->frontSquareValueLabel->setText(QString::number(windowSystem.getWindowSystemSquare() / 1000000));
     ui->frontWindowSizesCostValueLabel->setText(QString::number(windowSystem.getWindowSizesServiceCost() / 1000000));
 }
-
