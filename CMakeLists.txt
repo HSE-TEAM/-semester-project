@@ -23,6 +23,14 @@ set(PROJECT_SOURCES
         newform.cpp
         newform.h
         newform.ui
+        clients.h
+        calculatorwindow.cpp
+        calculatorwindow.h
+        calculatorwindow.ui
+        window_system.cpp
+        window_system.h
+        window_system_values.cpp
+        window_system_values.h
 )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(project
