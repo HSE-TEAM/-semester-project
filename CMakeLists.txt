@@ -1,74 +1,18 @@
-cmake_minimum_required(VERSION 3.5)
-
-project(project VERSION 0.1 LANGUAGES CXX)
-
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
-
-set(PROJECT_SOURCES
-        main.cpp
-        dialog.cpp
-        dialog.h
-        dialog.ui
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        newform.cpp
-        newform.h
-        newform.ui
-        clients.h
-        calculatorwindow.cpp
-        calculatorwindow.h
-        calculatorwindow.ui
-        window_system.cpp
-        window_system.h
-        window_system_values.cpp
-        window_system_values.h
-)
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(project
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET project APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
-else()
-    if(ANDROID)
-        add_library(project SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(project
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
-
-target_link_libraries(project PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
-set_target_properties(project PROPERTIES
-    MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-    MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE TRUE
+cmake_minimum_required(VERSION 3.25)
+project(
+        Calculator
+        VERSION 1.0
+        DESCRIPTION "A calculator that can be used to calculate the cost of a balcony"
+        LANGUAGES CXX
 )
 
-install(TARGETS project
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(project)
-endif()
+add_subdirectory(src/calculator)
+add_subdirectory(src/database)
+add_subdirectory(src/common)
+add_subdirectory(src/utils)
+
+add_subdirectory(apps)

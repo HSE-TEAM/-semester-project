@@ -1,0 +1,63 @@
+add_library(
+        Calculator
+        STATIC
+        calculator/common_interfaces/i_updatable.h
+        calculator/common_interfaces/i_nameable.h
+        calculator/common_interfaces/i_costable.h
+        calculator/value_interfaces/i_value.h
+        calculator/value_interfaces/i_value_enumerable.h
+        calculator/value_interfaces/parameter_interfaces/i_parameter.h
+        calculator/value_interfaces/parameter_interfaces/i_parameter_enumerable.h
+        calculator/window_group/window/window.cpp
+        calculator/window_group/window/window.h
+        calculator/window_group/window/parameters/enumerable_parameter/enumerable_value/enumerable_value.cpp
+        calculator/window_group/window/parameters/enumerable_parameter/enumerable_value/enumerable_value.h
+        calculator/window_group/window/parameters/single_parameter/single_value/single_value.cpp
+        calculator/window_group/window/parameters/single_parameter/single_value/single_value.h
+        calculator/window_group/window/parameters/enumerable_parameter/enumerable_parameter.cpp
+        calculator/window_group/window/parameters/enumerable_parameter/enumerable_parameter.h
+        calculator/window_group/window/parameters/single_parameter/single_parameter.cpp
+        calculator/window_group/window/parameters/single_parameter/single_parameter.h
+        calculator/window_group/window_group.cpp
+        calculator/window_group/window_group.h
+        calculator/window_group/window/glassy_object/glassy_object.cpp
+        calculator/window_group/window/glassy_object/glassy_object.h
+        calculator/value_interfaces/value_visitor/i_value_visitor.h
+        calculator/sized_parameter_holder/parameter_holder/base_holder/base_holder_visitor/i_base_holder_visitor.h
+        calculator/sized_parameter_holder/parameter_holder/base_holder/base_holder_visitor/concrete_visitors/i_base_holder_printing_visitor/i_base_holder_printing_visitor.cpp
+        calculator/sized_parameter_holder/parameter_holder/base_holder/base_holder_visitor/concrete_visitors/i_base_holder_printing_visitor/i_base_holder_printing_visitor.h
+        calculator/window_group/window/parameters/concrete_parameters/glass_meter_price_single_parameter/glass_meter_price_single_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/glass_meter_price_single_parameter/glass_meter_price_single_parameter.h
+        calculator/window_group/window/parameters/concrete_visitors/value_printing_visitor/value_printing_visitor.cpp
+        calculator/window_group/window/parameters/concrete_visitors/value_printing_visitor/value_printing_visitor.h
+        calculator/window_group/window/parameters/concrete_parameters/square_multiply_enumerable_parameter/square_multiply_enumerable_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/square_multiply_enumerable_parameter/square_multiply_enumerable_parameter.h
+        calculator/window_group/window/parameters/concrete_parameters/just_multiply_enumerable_parameter/just_multiply_enumerable_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/just_multiply_enumerable_parameter/just_multiply_enumerable_parameter.h
+        calculator/window_group/window/parameters/concrete_parameters/bottom_square_multiply_enumerable_parameter/bottom_square_multiply_enumerable_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/bottom_square_multiply_enumerable_parameter/bottom_square_multiply_enumerable_parameter.h
+        calculator/window_group/window/parameters/concrete_parameters/top_square_multiply_enumerable_parameter/top_square_multiply_enumerable_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/top_square_multiply_enumerable_parameter/top_square_multiply_enumerable_parameter.h
+        calculator/window_group/window/parameters/concrete_parameters/handles_enumerable_parameter/handles_enumerable_parameter.cpp
+        calculator/window_group/window/parameters/concrete_parameters/handles_enumerable_parameter/handles_enumerable_parameter.h
+        calculator/common_interfaces/i_cloneable.h
+        calculator/window_group/window/parameters/concrete_parameters/i_glassy_object_parentable.h
+        calculator/sized_parameter_holder/sized_parameter_holder.cpp
+        calculator/sized_parameter_holder/sized_parameter_holder.h
+        calculator/balcony_group/balcony_parameter_holder/balcony_parameter_holder.cpp
+        calculator/balcony_group/balcony_parameter_holder/balcony_parameter_holder.h
+        calculator/balcony_group/balcony_parameter_holder/concrete_parameters/countable_square_multiply_enumerable_parameter/countable_square_multiply_enumerable_parameter.cpp
+        calculator/balcony_group/balcony_parameter_holder/concrete_parameters/countable_square_multiply_enumerable_parameter/countable_square_multiply_enumerable_parameter.h
+        calculator/sized_parameter_holder/i_sized_parameter_holder_parentable.h
+        calculator/sized_parameter_holder/parameter_holder/base_holder/base_holder.cpp
+        calculator/sized_parameter_holder/parameter_holder/base_holder/base_holder.h
+        calculator/sized_parameter_holder/parameter_holder/parameter_holder.cpp
+        calculator/sized_parameter_holder/parameter_holder/parameter_holder.h
+        calculator/balcony_group/balcony_group.cpp
+        calculator/balcony_group/balcony_group.h
+        calculator/calculator.cpp
+        calculator/calculator.h)
+
+
+target_include_directories(Calculator PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(Calculator PUBLIC Calc_DB_ Calc_Common_)
