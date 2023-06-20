@@ -20,7 +20,7 @@ void NewForm::on_Create_client_clicked()
     QString surname = ui->surname->text();
     QString adress = ui->adress->text();
 
-
+    //добавление параметров заказа...
     parent->addNewClient(name, surname, adress, QDateTime::currentDateTime().toString("hh:mm dd.MM.yyyy"), 10000 + rand() % 100);
     QWidget::close();
 }

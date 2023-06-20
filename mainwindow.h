@@ -27,6 +27,10 @@ private slots:
     void on_pushButton_clicked();
     void clientUpdate();
 
+    void on_updateWindowNow_clicked();
+
+    void deleteClient(client &person);
+
 private:
     Ui::MainWindow *ui;
     std::vector<client> clients;
