@@ -16,8 +16,8 @@
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>80</y>
+     <x>50</x>
+     <y>50</y>
      <width>381</width>
      <height>251</height>
     </rect>
@@ -61,7 +61,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="login">
             <property name="font">
              <font>
               <pointsize>14</pointsize>
@@ -86,7 +86,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2">
+           <widget class="QLineEdit" name="password">
             <property name="font">
              <font>
               <pointsize>14</pointsize>

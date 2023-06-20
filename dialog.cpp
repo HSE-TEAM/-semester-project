@@ -3,6 +3,9 @@
 #include <QMessageBox>
 #include "mainwindow.h"
 
+#include <QFile>
+#include <QTextStream>
+
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Dialog)
@@ -18,16 +21,25 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
-    QString login = ui->label->text();
-    QString password = ui->label_2->text();
-
-    if (users[login.toStdString()].empty() and users[login.toStdString()] != password.toStdString()) {
-        QMessageBox::warning(this, "Warning", "Wrong login or password");
-    } else {
+    QString login = ui->login->text();
+    QString password = ui->password->text();
+    QFile file("C:/Users/ivpus/Desktop/Hse/qt exemple/project/logins.csv");
+    if ( !file.open(QFile::ReadOnly | QFile::Text)) {
+        return;
+    }
+    QTextStream in(&file);
+    int index = 0;
+    while(!in.atEnd() and index == 0){
+        QString line = in.readLine();
+        QStringList information = line.split(";");
+        if (information[1] != login) continue;
+        if (information[2] != password) continue;
+        index++;
         hide();
         window = new MainWindow(this);
         window->show();
     }
+    if (index == 0) QMessageBox::warning(this, "Warning", "Wrong login or password");
 }
 
 
