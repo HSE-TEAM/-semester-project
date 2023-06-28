@@ -2,40 +2,29 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "clients.h"
-#include <vector>
-#include <memory>
-#include <QGroupBox>
+#include "calculatorwindow.h"
+#include "mainclientswindow.h"
 
-namespace Ui {
-class MainWindow;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class MainWindow; }
+QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr, int ID = 0);
-    void addNewClient(QString name, QString surname, QString adress, QString data, int ID);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-
-    void on_open_new_people_clicked();
-
     void on_pushButton_clicked();
-    void clientUpdate();
 
-    void on_updateWindowNow_clicked();
-
-    void deleteClient(client &person);
+    void on_pushButton_4_clicked();
 
 private:
     Ui::MainWindow *ui;
-    std::vector<client> clients;
-    std::vector<QGroupBox*> table;
-    int ID;
+    CalculatorWindow *calculatorWindow;
+    MainClientsWindow *mainClientsWindow;
 };
-
 #endif // MAINWINDOW_H

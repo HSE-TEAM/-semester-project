@@ -1,12 +1,12 @@
-#include "dialog.h"
+#include "mainwindow.h"
+#include "authorisationwindow.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Dialog w;
-    w.show();
-    a.setQuitOnLastWindowClosed(false);
+    AuthorisationWindow authorisationWindow;
+    authorisationWindow.show();
     return a.exec();
 }
