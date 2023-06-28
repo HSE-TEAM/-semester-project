@@ -27,3 +27,10 @@ void MainWindow::on_pushButton_4_clicked()
     mainClientsWindow->show();
 }
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    workersWindow = new WorkersWindow(this);
+    workersWindow->show();
+}
+

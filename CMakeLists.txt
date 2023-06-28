@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 
 set(PROJECT_SOURCES
         src/main.cpp
@@ -29,6 +29,9 @@ set(PROJECT_SOURCES
         src/addnewclientwindow.cpp
         src/addnewclientwindow.h
         src/addnewclientwindow.ui
+        src/workerswindow.h
+        src/workerswindow.cpp
+        src/workerswindow.ui
 )
 
 
@@ -57,7 +60,7 @@ endif()
 
 add_subdirectory(libs/document_creator)
 add_subdirectory(libs/calculator)
-target_link_libraries(balconiesInterface PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Calculator document_creator)
+target_link_libraries(balconiesInterface PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql Calculator document_creator)
 
 set_target_properties(balconiesInterface PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
