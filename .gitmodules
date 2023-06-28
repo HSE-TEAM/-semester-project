@@ -1,0 +1,6 @@
+[submodule "libs/document_creator"]
+	path = libs/document_creator
+	url = https://github.com/i1alxn/document-creator
+[submodule "libs/calculator"]
+	path = libs/calculator
+	url = https://github.com/i1alxn/calculator

@@ -1,0 +1,3050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalculatorWindow</class>
+ <widget class="QDialog" name="CalculatorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1478</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>871</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Параметры балкона</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="7">
+     <widget class="QLabel" name="label_82">
+      <property name="text">
+       <string>Сумма</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_56">
+      <property name="text">
+       <string>Фасадная стена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_57">
+      <property name="text">
+       <string>Откос</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_55">
+      <property name="text">
+       <string>Потолок</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="6">
+     <widget class="QLabel" name="slopeSquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_79">
+      <property name="text">
+       <string>Длина</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="skirtComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QComboBox" name="side2MaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="7">
+     <widget class="QLabel" name="slopePriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QComboBox" name="floorMaterialcomboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="QLabel" name="floorSquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="7">
+     <widget class="QLabel" name="floorPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLineEdit" name="facadeWallLengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLineEdit" name="slopeLengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QComboBox" name="skirtMaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="QLabel" name="ceilingPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QComboBox" name="side1MaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLineEdit" name="side2LengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QComboBox" name="slopeMaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_52">
+      <property name="text">
+       <string>Юбка</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLabel" name="skirtSquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QComboBox" name="facadeWallMaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QLabel" name="side1SquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="QLabel" name="ceilingSquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QLabel" name="side2SquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QComboBox" name="ceilingMaterialComboBox">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="side2ComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="ceilingComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="QLabel" name="facadeWallSquareLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_59">
+      <property name="text">
+       <string>Фальшстена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="ceilingLengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_58">
+      <property name="text">
+       <string>Пол</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLabel" name="label_81">
+      <property name="text">
+       <string>М/КВ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLineEdit" name="floorLengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="label_80">
+      <property name="text">
+       <string>Материал</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="7">
+     <widget class="QLabel" name="falseWallPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="QLabel" name="facadeWallPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="skirtLengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="side1LengthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_53">
+      <property name="text">
+       <string>Бок1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QComboBox" name="floorComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QComboBox" name="falseWallComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QLabel" name="side2PriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_54">
+      <property name="text">
+       <string>Бок2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="facadeWallComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QLabel" name="side1PriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="slopeComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="side1ComboBox">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Да</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="QLabel" name="skirtPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_60">
+      <property name="text">
+       <string>Ширина</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="skirtWidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLineEdit" name="side1WidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLineEdit" name="side2WidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QLineEdit" name="ceilingWidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLineEdit" name="facadeWallWidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QLineEdit" name="slopeWidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QLineEdit" name="floorWidthLineEdit">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>410</y>
+     <width>591</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Параметры отделки</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_69">
+      <property name="text">
+       <string>Мм</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBox_20">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="comboBox_23">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QComboBox" name="comboBox_25">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLabel" name="slopeInsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QComboBox" name="comboBox_27">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QComboBox" name="comboBox_31">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="side2InsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QComboBox" name="comboBox_28">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboBox_19">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_70">
+      <property name="text">
+       <string>Пароизол</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="side1InsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_67">
+      <property name="text">
+       <string>Откос</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_65">
+      <property name="text">
+       <string>Потолок</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="facadeWallInsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QComboBox" name="comboBox_29">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QComboBox" name="comboBox_26">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="ceilingInsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_62">
+      <property name="text">
+       <string>Юбка</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QComboBox" name="comboBox_30">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="skirtInsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="comboBox_24">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QComboBox" name="comboBox_32">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_63">
+      <property name="text">
+       <string>Бок1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLabel" name="floorInsulationPriceLabel">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_68">
+      <property name="text">
+       <string>Пол</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="comboBox_22">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_61">
+      <property name="text">
+       <string>Утепление</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_64">
+      <property name="text">
+       <string>Бок2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_66">
+      <property name="text">
+       <string>Фасадная стена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox_21">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_71">
+      <property name="text">
+       <string>Сумма</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>660</y>
+     <width>591</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_9">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_97">
+      <property name="text">
+       <string>Настил пола</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboBox_33">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_101">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_99">
+      <property name="text">
+       <string>Плинтус</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboBox_34">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_102">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_100">
+      <property name="text">
+       <string>Теплый пол</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBox_35">
+      <item>
+       <property name="text">
+        <string>Нет</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_103">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>720</y>
+     <width>681</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_14">
+    <item>
+     <widget class="QLabel" name="label_104">
+      <property name="text">
+       <string>Общая сумма</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="totalPriceLabel">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>730</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Создать Pdf</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>-9</x>
+     <y>0</y>
+     <width>1481</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_18">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Фасад балконного остекления</string>
+      </property>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>90</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Стоимость</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Количество секций</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="frontWindowSectionsComboBox">
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Верх ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="frontWindowUpperRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Ниж ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="frontWindowLowerRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Ширина</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="frontWindowWidthLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>173</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>Площадь</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="frontWindowSquareLabel">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>481</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Профиль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QLabel" name="frontWindowHandlesPriceComboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLabel" name="frontWindowBulkToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="frontWindowNumberOfOpeningsComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QComboBox" name="frontWindowBulkToningSqareComboBox">
+            <item>
+             <property name="text">
+              <string>Нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="frontWindowBulkToningComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Ручки</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QComboBox" name="frontWindowTriplexSquareComboBox">
+            <item>
+             <property name="text">
+              <string>нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="frontWindowTriplexComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Тонировка низ/верх</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="frontWindowGlazingComboBox"/>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Монтаж изделий</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="frontWindowLaminationPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Стеклопакет</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="frontWindowGlazingLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="frontWindowProfilePriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Кол-во откр створок</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="frontWindowToningComboBox">
+          <item>
+           <property name="text">
+            <string>Нет</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Верх</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Низ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Все</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLabel" name="frontWindowWorkPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="frontWindowNumberOfOpeningsPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLabel" name="frontWindowMosquitoNetPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Покраска/ламинация</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="frontWindowLaminationComboBox"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QComboBox" name="frontWindowMosquitoNetComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLabel" name="frontWindowTriplexPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QComboBox" name="frontWindowProfileComboBox"/>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Триплекс верх/низ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Москитная сетка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Тонировка в массе</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QComboBox" name="frontWindowHandlesComboBox"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="frontWindowToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Правая часть балконного остекления</string>
+      </property>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>90</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Стоимость</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>Количество секций</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="rightWindowSecsionsComboBox">
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>Верх ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="rightWindowUpperRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_38">
+          <property name="text">
+           <string>Ниж ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="rightWindowLowerRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>Ширина</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="rightWindowWidthLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>173</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>Площадь</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="rightWindowSquareLabel">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>481</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>Профиль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QLabel" name="rightWindowHandlesPriceComboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLabel" name="rightWindowBulkToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="rightWindowNumberOfOpeningsComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QComboBox" name="rightWindowBulkToningSqareComboBox">
+            <item>
+             <property name="text">
+              <string>Нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="rightWindowBulkToningComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>Ручки</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QComboBox" name="rightWindowTriplexSquareComboBox">
+            <item>
+             <property name="text">
+              <string>нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="rightWindowTriplexComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_43">
+          <property name="text">
+           <string>Тонировка низ/верх</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="rightWindowGlazingComboBox"/>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <widget class="QLabel" name="label_44">
+          <property name="text">
+           <string>Монтаж изделий</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="rightWindowLaminationPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_45">
+          <property name="text">
+           <string>Стеклопакет</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="rightWindowGlazingLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="rightWindowProfilePriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_46">
+          <property name="text">
+           <string>Кол-во откр створок</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="rightWindowToningComboBox">
+          <item>
+           <property name="text">
+            <string>Нет</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Верх</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Низ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Все</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLabel" name="label_47">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLabel" name="rightWindowWorkPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="rightWindowNumberOfOpeningsPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLabel" name="rightWindowMosquitoNetPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_48">
+          <property name="text">
+           <string>Покраска/ламинация</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="rightWindowLaminationComboBox"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QComboBox" name="rightWindowMosquitoNetComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLabel" name="rightWindowTriplexPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QComboBox" name="rightWindowProfileComboBox"/>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QLabel" name="label_49">
+          <property name="text">
+           <string>Триплекс верх/низ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QLabel" name="label_50">
+          <property name="text">
+           <string>Москитная сетка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="label_51">
+          <property name="text">
+           <string>Тонировка в массе</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QComboBox" name="rightWindowHandlesComboBox"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="rightWindowToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Левая часть балконного остекления</string>
+      </property>
+      <widget class="QLabel" name="label_105">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>80</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Стоимость</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_106">
+          <property name="text">
+           <string>Количество секций</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="leftWindowSectionsComboBox">
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_107">
+          <property name="text">
+           <string>Верх ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="leftWindowUpperRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_108">
+          <property name="text">
+           <string>Ниж ряд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="leftWindowLowerRowLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_109">
+          <property name="text">
+           <string>Ширина</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="leftWindowWidthLineEdit">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>173</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_110">
+          <property name="text">
+           <string>Площадь</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="leftWindowSquareLabel">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>481</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_111">
+          <property name="text">
+           <string>Профиль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QLabel" name="leftWindowHandlesPriceComboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLabel" name="leftWindowBulkToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QComboBox" name="leftWindowNumberOfOpeningsComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QComboBox" name="leftWindowBulkToningSqareComboBox">
+            <item>
+             <property name="text">
+              <string>Нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="leftWindowBulkToningComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QLabel" name="label_112">
+          <property name="text">
+           <string>Ручки</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QComboBox" name="leftWindowTriplexSquareComboBox">
+            <item>
+             <property name="text">
+              <string>нет</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>верх</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>низ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>все</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="leftWindowTriplexComboBox"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_113">
+          <property name="text">
+           <string>Тонировка низ/верх</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QComboBox" name="leftWindowGlazingComboBox"/>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <widget class="QLabel" name="label_114">
+          <property name="text">
+           <string>Монтаж изделий</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="leftWindowLaminationPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_115">
+          <property name="text">
+           <string>Стеклопакет</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="leftWindowGlazingLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="leftWindowProfilePriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_116">
+          <property name="text">
+           <string>Кол-во откр створок</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="leftWindowToningComboBox">
+          <item>
+           <property name="text">
+            <string>Нет</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Верх</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Низ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Все</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLabel" name="label_117">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLabel" name="leftWindowWorkPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="leftWindowNumberOfOpeningsPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLabel" name="leftWindowMosquitoNetPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_118">
+          <property name="text">
+           <string>Покраска/ламинация</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="leftWindowLaminationComboBox"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QComboBox" name="leftWindowMosquitoNetComboBox">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLabel" name="leftWindowTriplexPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QComboBox" name="leftWindowProfileComboBox"/>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QLabel" name="label_119">
+          <property name="text">
+           <string>Триплекс верх/низ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QLabel" name="label_120">
+          <property name="text">
+           <string>Москитная сетка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="label_121">
+          <property name="text">
+           <string>Тонировка в массе</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QComboBox" name="leftWindowHandlesComboBox"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="leftWindowToningPriceLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>738</y>
+     <width>681</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_12">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_72">
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="nameLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_73">
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="surnameLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
